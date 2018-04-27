@@ -26,6 +26,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni.mk \
-    $(LOCAL_DIR)/omni_tissot.mk \
+    $(LOCAL_DIR)/lineage.mk \
+    $(LOCAL_DIR)/lineage_tissot.mk \
     $(LOCAL_DIR)/tissot.mk \
