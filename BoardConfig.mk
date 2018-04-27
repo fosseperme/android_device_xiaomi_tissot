@@ -24,7 +24,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := tissot_defconfig
+TARGET_KERNEL_CONFIG := custom_tissot-perf_defconfig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 55087422464 # 25765059584 - 16384
@@ -37,9 +37,6 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 # Root Folders
 BOARD_ROOT_EXTRA_FOLDERS := dsp firmware persist
-
-# Shims
-TARGET_LD_SHIM_LIBS := /system/vendor/lib/hw/camera.msm8953.so|libshims_skia.so
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk
